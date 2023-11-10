@@ -94,7 +94,7 @@ header {
 .home {     
     width: auto;
     height: auto;
-    margin: 18vh 10% 30vh 10%;
+    margin: 15vh 10% 30vh 10%;
 }
 
 .container {
@@ -181,7 +181,12 @@ header {
     content: '60%';
 }
 
-
+.origin h2 {
+    color: var(--color-yellow);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 0px #3d649e, 2px 3px 0px rgb(76, 124, 184)
+}
 
 
 
