@@ -94,16 +94,92 @@ header {
 .home {     
     width: auto;
     height: auto;
-    margin-top: 150px;
-    margin-bottom: 10%;
-    margin-left: 80px;
-    margin-right: 100px;
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 50% 50%;  
-    overflow: hidden;
+    margin: 18vh 10% 30vh 10%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    border-radius: 2rem;
+    box-shadow: 8px -8px 0px #edda5d, -6px 6px 20px rgba(0, 0, 0, 0.2);
+    width: auto;
+    background: var(--color-blue);
+    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+    gap: 5rem;
+}
+
+.origin {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.contentBar {
+    display: flex;
+    width: 80%;
+    height: 26px;
+    background: rgba(83, 83, 83, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0px 3px 0px #4c75b2, 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+    
+.progressBar{
+    background: var(--color-yellow);
+    width: 70%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contentBar::after {
+    content: '0%';
+    margin-top: 1px;
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    text-shadow: 1px 1px 1px rgba(51, 105, 185, 0.5);
+    font-weight: 600;
+    letter-spacing: .5rem;
+    position: absolute;
+    left: 48%;
+}
+
+.progressBar.C {
+    width: 40%;}
+.contentBar.C::after {
+    content: '40%';
+}
+
+.progressBar.HTML {
+    width: 75%;}
+.contentBar.HTML::after {
+    content: '75%';
+}
+
+.progressBar.CSS {
+    width: 70%;}
+.contentBar.CSS::after {
+    content: '70%';
+}
+
+.progressBar.JS {
+    width: 45%;}
+.contentBar.JS::after {
+    content: '45%';
+}
+
+.progressBar.SQL {
+    width: 60%;}
+.contentBar.SQL::after {
+    content: '60%';
+}
 
 
 
@@ -363,11 +439,6 @@ footer {
 /* Media Query*/
 
 @media screen and (max-width: 1600px) {
-    .name h1 {
-        font-size: 5rem;
-        top: 10px;
-        line-height: 7rem;
-    }
 
     .rightForm p {
         font-size: 2rem;
@@ -384,11 +455,6 @@ footer {
 }
 
 @media screen and (max-width: 1366px) {
-    .name h1 {
-        font-size: 4rem;
-        top: 5px;
-        line-height: 7rem;
-    }
 
     .contact {
         margin-top: 30px;
@@ -420,12 +486,6 @@ footer {
     
     header {
         padding: 35px 3%;
-    }
-    
-    .name h1 {
-        font-size: 4rem;
-        top: 5px;
-        line-height: 7rem;
     }
 
     .contact {
@@ -460,23 +520,12 @@ footer {
         padding: 35px 3%;
     }
 
-    .name h1 {
-        font-size: 3.6rem;
-        top: 5px;
-        line-height: 6rem;
-    }
 }
 
 @media screen and (max-width: 1200px) {
     
     header {
         padding: 35px 0%;
-    }
-
-    .name h1 {
-        font-size: 3rem;
-        top: 5px;
-        line-height: 5rem;
     }
 
     .contact {
@@ -517,13 +566,6 @@ footer {
 @media screen and (max-width: 1082px) {
     .navBar li a {
         font-size: 1.4rem;
-    }
-     
-    .name h1 {
-        font-size: 2rem;
-        top: 5px;
-        line-height: 5rem;
-        text-shadow: 2px 2px 0px var(--color-yellow);
     }
 
     .rightForm p {
@@ -572,27 +614,6 @@ footer {
 
     .home {
         display: inline;
-    }
-    
-    .back {
-        margin: 10rem 1rem;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .name h1 {
-        font-weight: 400;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        margin: 2rem 25rem;
-        font-size: 5rem;
-        top: 0px;
-        letter-spacing: 3rem;
-        line-height: 10rem;
-        text-shadow: 2px 2px 0px var(--color-yellow);
     }
 
     .contact {
@@ -656,27 +677,6 @@ footer {
 
     .home {
         display: inline;
-    }
-    
-    .back {
-        margin: 10rem 1rem;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .name h1 {
-        font-weight: 400;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        margin: 2rem 25rem;
-        font-size: 5rem;
-        top: 0px;
-        letter-spacing: 3rem;
-        line-height: 10rem;
-        text-shadow: 2px 2px 0px var(--color-yellow);
     }
 
     .contact {
@@ -742,32 +742,12 @@ footer {
         display: inline;
     }
     
-    .back {
-        margin: 8rem 0rem;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .name h1 {
-        font-weight: 500;
-        margin: -1rem 0rem 5rem 1rem;
-        font-size: 4.5rem;
-        top: 0px;
-        letter-spacing: 2rem;
-        line-height: 8rem;
-        text-shadow: 1.5px 1.5px 0px var(--color-yellow);
-    }
 
     .contact {
         margin:  4rem auto;
         font-size: 1.6rem;
         padding: 1rem 3rem;
-    }
-
-    .name {
-        height: auto;
     }
 
     .formulaire {
@@ -831,12 +811,6 @@ footer {
 
  }
 
- @media screen and (max-width: 540px) {
-    .name h1 {
-        font-size: 3rem;
-    }
- }
-
  @media screen and (max-device-width: 384px) {
     
     #foot { 
@@ -851,32 +825,11 @@ footer {
         display: inline;
     }
     
-    .back {
-        margin: 5rem 0rem;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .name h1 {
-        font-weight: 800;
-        margin: -1rem 0rem 5rem 1rem;
-        font-size: 2rem;
-        top: 0px;
-        letter-spacing: 1.2rem;
-        line-height: 5rem;
-        text-shadow: 1.5px 1.5px 0px var(--color-yellow);
-    }
 
     .contact {
         margin:  0rem auto;
         font-size: 1.4rem;
         padding: 1rem 3rem;
-    }
-
-    .name {
-        height: 400px;
     }
 
     .formulaire {
