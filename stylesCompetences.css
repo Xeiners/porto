@@ -133,10 +133,11 @@ header {
     
 .progressBar{
     background: var(--color-yellow);
-    width: 70%;
+    width: 0%;
     height: 100%;
     border-radius: 1rem;
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3);
+    transition: .5s;
 }
 
 .contentBar::after {
@@ -149,33 +150,35 @@ header {
     letter-spacing: .5rem;
     position: absolute;
     left: 48%;
+
 }
 
-.progressBar.C {
+
+.contentBar:hover .progressBar.C {
     width: 40%;}
 .contentBar.C::after {
     content: '40%';
 }
 
-.progressBar.HTML {
+.contentBar:hover .progressBar.HTML {
     width: 75%;}
 .contentBar.HTML::after {
     content: '75%';
 }
 
-.progressBar.CSS {
+.contentBar:hover .progressBar.CSS {
     width: 70%;}
 .contentBar.CSS::after {
     content: '70%';
 }
 
-.progressBar.JS {
+.contentBar:hover .progressBar.JS {
     width: 45%;}
 .contentBar.JS::after {
     content: '45%';
 }
 
-.progressBar.SQL {
+.contentBar:hover .progressBar.SQL {
     width: 60%;}
 .contentBar.SQL::after {
     content: '60%';
@@ -444,7 +447,9 @@ footer {
 /* Media Query*/
 
 @media screen and (max-width: 1600px) {
-
+    .home {     
+        margin: 25vh 10% 30vh 10%;
+    }
     .rightForm p {
         font-size: 2rem;
     }
@@ -460,6 +465,9 @@ footer {
 }
 
 @media screen and (max-width: 1366px) {
+    .home {     
+        margin: 20vh 10% 30vh 10%;
+    }
 
     .contact {
         margin-top: 30px;
@@ -608,17 +616,17 @@ footer {
 }
 
 @media screen and (max-width: 936px) {
-    
+
+    .home {     
+        margin: 20vh 10% 30vh 10%;
+    }
+
     .navBar li {
         margin: 0% 2vh;
     }
 
     #foot { 
         display: none !important;
-    }
-
-    .home {
-        display: inline;
     }
 
     .contact {
@@ -672,6 +680,21 @@ footer {
 
  @media screen and (max-width: 767px) {
     
+    .container {
+        border-radius: 0rem 0rem 2rem 2rem;
+        box-shadow: 0px 9px 0px rgb(237, 218, 93),0px 0px 0px rgb(237, 218, 93) ;
+    }
+    
+    .home {
+        margin: 0;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    header {
+        display: none;
+    }
+    
     .navBar li {
         margin: 0% 2vh;
     }
@@ -680,9 +703,6 @@ footer {
         display: none !important;
     }
 
-    .home {
-        display: inline;
-    }
 
     .contact {
         margin:  5rem auto;
@@ -735,6 +755,10 @@ footer {
 
  @media screen and (max-width: 700px) {
     
+    .contentBar::after {
+        left: 45%;
+    }    
+
     #foot { 
         display: none !important;
     }
@@ -818,6 +842,10 @@ footer {
 
  @media screen and (max-device-width: 384px) {
     
+    .contentBar::after {
+        
+    }
+
     #foot { 
         display: none !important;
     }
