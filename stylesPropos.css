@@ -377,6 +377,45 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
+    header {
+        padding: 35px 0%;
+    }
+
+    .name h1 {
+        font-size: 3rem;
+        top: 5px;
+        line-height: 5rem;
+    }
+
+    .contact {
+        margin-top: 30px;
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .rightForm p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+
+    .formulaire {
+        margin: 38px 80px;
+    }
+    
+    .social {
+        bottom: 15rem;
+    }
+
+    .social img {
+        margin: 0px 1.1rem;
+        width: 3rem;
+    }
+
+    .inputName button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.4rem;
+    }
+   
     #element1 {
         order: 1;
     }
