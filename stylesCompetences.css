@@ -1055,4 +1055,16 @@ footer {
  }
 
 
- 
+ /*  ANIMATION APPARITION */
+
+.unReveal {
+    opacity: 0;
+    transform:  translateY(-30px);
+}
+
+.reveal {
+    opacity: 1;
+    transform:  translateY(0);
+    transition: 1s;
+}
+
